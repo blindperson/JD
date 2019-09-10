@@ -1,0 +1,368 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#fourPart{
+	width: 100%;
+	height:  480px;
+	padding-bottom: 30px;
+	background-color: #f4f4f4;
+}
+#fourPartCenter{
+	width: 1190px;
+	height: 480px;
+	margin: 0 auto;
+	display: flex;
+}
+#fourPartCenterOne{
+	width: 190px;
+	float: left;
+	height: 480px;
+	margin-right: 10px;
+	padding: 10px 0;
+	height: 450px;
+	color: #636363;
+}
+#fourPartCenterOne ul{
+	width: 190px;
+	height: 450px;
+	background-color: #FEFEFE;
+	margin: 0;
+	padding: 10px 0;
+	color: #636363;
+	position: relative;
+}
+#fourPartCenterOne ul li{
+	list-style: none;
+	padding-left: 18px;
+	height: 25px;
+    line-height: 25px;
+}
+#fourPartCenterOne ul li a{
+	text-decoration: none;
+	font-size: 14px;
+	color: #333;
+}
+#fourPartCenterOne ul li a:hover{
+	color: red;
+	display: block;
+}
+#fourPartCenterOne ul li:hover {
+	background-color: #EFEFEF;
+}
+#fourPartCenterOne #contentUl{
+	width: 800px;
+	height: 470px;
+	background-color: white;
+	position: absolute;
+	top: 0;
+	left: 190px;
+	border: solid 1px #EEEEEE;
+	box-shadow: 0 0 5px 2px #EEEEEE;
+	display: none;
+	z-index: 5;
+}
+#fourPartCenterOne #contentUl .contentUlTop{
+	display: flex;
+	margin-left: 20px;
+	margin-top: 15px;
+}
+#fourPartCenterOne #contentUl .contentUlTop section{
+	background-color: black;
+	color: white;
+	margin-right: 10px;
+	padding: 0 10px;
+}
+#fourPartCenterOne #contentUl .contentUlTop section a{
+	color: white;
+	text-decoration: none;
+}
+#fourPartCenterOne #contentUl .contentUlBottom{
+	padding-left: 20px;
+	padding-top: 10px;
+}
+#fourPartCenterOne #contentUl .contentUlBottom .item{
+	display: flex;
+}
+#fourPartCenterOne #contentUl .contentUlBottom .item div{
+	width: 80px;
+	text-align: right;
+}
+#fourPartCenterOne #contentUl .contentUlBottom .item div a{
+	color: black;
+}
+#fourPartCenterOne #contentUl .contentUlBottom a{
+	color: black;
+	text-decoration: none;
+	margin-left: 10px;
+	padding-top: 30px;
+	font-size: 14px;
+	color: #555;
+}
+#fourPartCenterTwo{
+	width: 590px;
+	height: 470px;
+	/*background-color: red;*/
+	margin-top: 10px;
+	position: relative;
+	overflow: hidden;
+}
+#fourPartCenterTwo:hover{
+	cursor: pointer;
+}
+#content{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/* 过渡动画 */
+	transition: left 0.5s;
+}
+.lbt-item{
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+	position: absolute;
+	top: 0;
+	left:0;
+}
+
+/* 指示器 */
+#indication{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: absolute;
+	left: -200px;
+	bottom: 10px;
+	display: flex;
+	justify-content: center;
+}
+.indication-item{
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	border: 2px solid white;
+	background-color: white;
+	margin: 0 5px;
+}
+.indication-high-lighted{
+	background-color: red;
+}
+
+.arrow{
+	width: 20px;
+	height: 24px;
+	font-size: 12px;
+	color: white;
+	border: 2px solid white;
+	background: rgba(255,255,255,0.3);
+	text-align: center;
+	line-height: 24px;
+	position: absolute;
+	top: calc(50% - 12px);
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+#arrowleft{
+	left: 0px;
+	border-left: hidden;
+	border-bottom-right-radius: 14px;
+	border-top-right-radius:14px;
+}
+#arrowright{
+	right: 0px;
+	border-right: hidden;
+	border-bottom-left-radius: 14px;
+	border-top-left-radius: 14px;
+}
+
+#fourPartCenterThree{
+	width: 190px;
+	height: 470px;
+	margin-left: 10px;
+	margin-top:10px ;
+	position: relative;
+}
+#fourPartCenterThree .item{
+	width: 190px;
+	height: 470px;
+	position: absolute;
+	left: 0;
+	/*overflow: hidden;*/
+}
+#fourPartCenterThree .item img{
+	width: 190px;
+	height: 150px;
+	margin-bottom: 5px;
+}
+#fourPartCenterThree .item img:hover{
+	opacity: 0.6;
+}
+#arrowRightleft{
+	left: 0px;
+	border-left: hidden;
+	border-bottom-right-radius: 14px;
+	border-top-right-radius:14px;
+}
+#arrowRightright{
+	right: 0px;
+	border-right: hidden;
+	border-bottom-left-radius: 14px;
+	border-top-left-radius: 14px;
+}
+#fourPartCenterFour{
+	width: 190px;
+	height: 470px;
+	margin-left: 10px;
+	margin-top: 10px;
+	background-color: white;
+	overflow: hidden;
+}
+#fourPartCenterFour div.user{
+	height: 102px;
+	
+	padding-left: 25px;
+	padding-top: 20px;
+	background-color: #fefefe;
+	box-sizing: border-box;
+}
+#fourPartCenterFour div.user .usertitle{
+	display: flex;
+}
+#fourPartCenterFour div.user img{
+	display: block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: solid 1px white;
+	box-shadow: 1px 1px 1px #EEEEEE;
+	box-sizing: border-box;
+}
+#fourPartCenterFour div.user section{
+	margin-left: 10px;
+}
+#fourPartCenterFour div.user a{
+	text-decoration: none;
+	color: #999999;
+	font-size: 14px;
+	
+}
+#fourPartCenterFour div.user section a:hover{
+	color: red;
+}
+#fourPartCenterFour div.user section span a{
+	color: rgb(100,100,100);
+}
+#fourPartCenterFour div.user section span a:first-child{
+	border-right: solid 1px black;
+	padding-right: 5px;
+}
+#fourPartCenterFour div.user .titleBottom{
+	padding-bottom: 15px;
+	border-bottom: solid 1px #EEEEEE;
+}
+#fourPartCenterFour div.user span.bottom{
+	display: inline-block;
+	margin: 0 5px;
+	width: 70px;
+	height: 25px;
+	line-height: 25px;
+	font-size: 12px;
+	text-align: center;
+	position: relative;
+	left: -14px;
+	top: 10px;
+	border-radius: 13px;
+	background: #e1251b;
+	transition: background .3s ease,color .3s ease;
+}
+#fourPartCenterFour div.user span.xrfl a{
+	font-size: 13px;
+	color: white;
+}
+#fourPartCenterFour div.user span.plushy{
+	background-color: #363634;
+}
+#fourPartCenterFour div.user span.plushy a{
+	font-size: 13px;
+	color: yellow;
+}
+#fourPartCenterFour .content{
+	width: 190px;
+	height: 130px;
+	box-sizing: border-box;
+	padding: 10px 10px;
+}
+#fourPartCenterFour .content .title{
+	display: flex;
+	justify-content: space-between;
+}
+#fourPartCenterFour .content .title a,span{
+	font-size: 11px;
+	text-decoration: none;
+	color: rgb(180,180,180);
+	text-align: center;
+}
+#fourPartCenterFour .content .item span.left{
+	display: inline-block;
+	position: relative;
+	font-size: 12px;
+	height: 16px;
+	width: 35px;
+	line-height: 16px;
+	text-align: center;
+	vertical-align: 0;
+	color: #e1251b;
+	background-color: rgba(225,37,27,.08);
+	margin-right: 6px;
+}
+#fourPartCenterFour .content .item{
+	display: flex;
+	justify-content: flex-start;
+}
+#fourPartCenterFour .content .item a{
+	text-decoration: none;
+	color: #666;
+	font-size: 12px;
+	line-height: 16px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+#fourPartCenterFour .content .item a:hover{
+	color: #c81623;
+}
+#fourPartCenterFour .content .item:last-child{
+	border-bottom: solid 1px #EEEEEE;
+	padding-bottom: 15px;
+}
+#contentBox{
+	display: flex;
+	flex-wrap: wrap;
+}
+#contentBox .item{
+	width: 63px;
+	height: 55px;
+	
+}
+#contentBox .item img{
+	width: 28px;
+	height: 28px;
+	display:block;
+	margin: 0 auto;
+}
+#contentBox .item a{
+	text-decoration: none;
+}
+#contentBox .item div{
+	height: 25px;
+	line-height: 25px;
+	border-bottom: 2px solid #fff;
+	color: #333;
+	display: block;
+	font-size: 15px;
+	text-align: center;
+}
